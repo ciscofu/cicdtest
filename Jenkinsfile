@@ -6,9 +6,7 @@ node {
     }
 
     stage('Test security') {
-        app.inside {
-            sh 'npm audit'
-        }
+      sh 'npm audit'
     }
 
     stage('Test functionality') {
